@@ -1,0 +1,52 @@
+
+body{
+    background-color:grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.container{
+    width: 70px;
+    height: 200px;
+    background-color: black;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 15px;
+    display: flex;
+    border-radius: 50px;
+
+}
+.circle{
+    background-color:aliceblue;
+    border-radius: 50px;
+    position: relative;
+    height: 40px;
+    width: 40px;
+
+}
+.circle.red{
+    background-color: red;
+    box-shadow: 0 0 20px 5px #c0392b;
+}
+.circle.yellow{
+    background-color:yellow;
+    box-shadow: 0 0 20px 5px yellow;
+}
+.circle.green{
+    background-color: green;
+    box-shadow: 0 0 20px 5px green;
+}
+.circle:after{
+   
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    border-right: 4px solid black;
+    top: 5px;
+}
